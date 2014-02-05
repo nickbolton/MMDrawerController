@@ -108,6 +108,11 @@
  */
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration __attribute((objc_requires_super));
 
--(BOOL)isPointContainedWithinCenterViewContentRect:(CGPoint)point;
+/** 
+ Returns YES if point is within the center view container rect.  Override if you need custom hit area calculations for the center view.
+
+ @param point The point with which to test.
+ */
+-(BOOL)isPointContainedWithinCenterViewContentRect:(CGPoint)point __attribute((objc_requires_super));
 
 @end
