@@ -108,4 +108,6 @@
  */
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration __attribute((objc_requires_super));
 
+-(BOOL)isPointContainedWithinCenterViewContentRect:(CGPoint)point;
+
 @end
